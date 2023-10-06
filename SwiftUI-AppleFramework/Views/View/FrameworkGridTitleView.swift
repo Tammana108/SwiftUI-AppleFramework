@@ -20,6 +20,7 @@ struct FrameworkGridTitleView: View {
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
         }.padding()
+            .tint(Color(.label))
     }
 }
 

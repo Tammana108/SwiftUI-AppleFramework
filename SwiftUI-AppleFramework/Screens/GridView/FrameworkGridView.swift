@@ -13,21 +13,39 @@ struct FrameworkGridView: View {
                                 GridItem(.flexible()),
                                 GridItem(.flexible())]
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ScrollView{
                 LazyVGrid(columns: columns, content: {
                     ForEach(MockData.frameworks){ framework in
-                        FrameworkGridTitleView(framework: framework)
-                            .onTapGesture {
-                                viewModel.selectedFramework = framework
-                            }
+                        NavigationLink(value : framework){
+                            FrameworkGridTitleView(framework: framework)
+                        }
+//                            .onTapGesture {
+//                                viewModel.selectedFramework = framework
+//                            }
                     }
                 })
             }
             .navigationTitle("🍎 Frameworks")
-            .sheet(isPresented: $viewModel.isShowingDetailView){ FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework,isShowingDetailView: $viewModel.isShowingDetailView)
+            .navigationDestination(for: Framework.self) { framework in
+                FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework)
             }
         }
+//        NavigationView{
+//            ScrollView{
+//                LazyVGrid(columns: columns, content: {
+//                    ForEach(MockData.frameworks){ framework in
+//                        FrameworkGridTitleView(framework: framework)
+//                            .onTapGesture {
+//                                viewModel.selectedFramework = framework
+//                            }
+//                    }
+//                })
+//            }
+//            .navigationTitle("🍎 Frameworks")
+//            .sheet(isPresented: $viewModel.isShowingDetailView){ FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework,isShowingDetailView: $viewModel.isShowingDetailView)
+//            }
+//        }
     }
 }
 
