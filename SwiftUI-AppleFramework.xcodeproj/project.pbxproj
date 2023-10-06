@@ -18,6 +18,8 @@
 		18C04B772ACFC09000B96EDA /* XCrossButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C04B762ACFC09000B96EDA /* XCrossButton.swift */; };
 		18C04B792ACFC12F00B96EDA /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C04B782ACFC12F00B96EDA /* AFButton.swift */; };
 		18C04B7B2ACFF08200B96EDA /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C04B7A2ACFF08200B96EDA /* SafariView.swift */; };
+		18C04B7E2AD00CBC00B96EDA /* FrameworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C04B7D2AD00CBC00B96EDA /* FrameworkListView.swift */; };
+		18C04B802AD00D6F00B96EDA /* FrameworkListTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C04B7F2AD00D6F00B96EDA /* FrameworkListTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		18C04B762ACFC09000B96EDA /* XCrossButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCrossButton.swift; sourceTree = "<group>"; };
 		18C04B782ACFC12F00B96EDA /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		18C04B7A2ACFF08200B96EDA /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		18C04B7D2AD00CBC00B96EDA /* FrameworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListView.swift; sourceTree = "<group>"; };
+		18C04B7F2AD00D6F00B96EDA /* FrameworkListTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		18C04B622ACEB85C00B96EDA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				18C04B7C2AD00C9D00B96EDA /* ListView */,
 				18C04B722ACECF7F00B96EDA /* DetailView */,
 				18C04B662ACEB8C700B96EDA /* GridView */,
 			);
@@ -131,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				18C04B6A2ACEB95000B96EDA /* FrameworkGridTitleView.swift */,
+				18C04B7F2AD00D6F00B96EDA /* FrameworkListTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +156,14 @@
 				18C04B782ACFC12F00B96EDA /* AFButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		18C04B7C2AD00C9D00B96EDA /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				18C04B7D2AD00CBC00B96EDA /* FrameworkListView.swift */,
+			);
+			path = ListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +242,9 @@
 				18C04B742ACECFA500B96EDA /* FrameworkDetailView.swift in Sources */,
 				18C04B682ACEB8E000B96EDA /* FrameworkGridView.swift in Sources */,
 				18C04B792ACFC12F00B96EDA /* AFButton.swift in Sources */,
+				18C04B802AD00D6F00B96EDA /* FrameworkListTitleView.swift in Sources */,
 				18C04B6B2ACEB95000B96EDA /* FrameworkGridTitleView.swift in Sources */,
+				18C04B7E2AD00CBC00B96EDA /* FrameworkListView.swift in Sources */,
 				18C04B772ACFC09000B96EDA /* XCrossButton.swift in Sources */,
 				18C04B712ACEC4A800B96EDA /* FrameworkGridViewModel.swift in Sources */,
 			);
